@@ -35,6 +35,10 @@ For later:
 * Password encryption using bcrypt
 * A basic user registration example
 
+## Clear instructions
+
+Create clear instructions and an application that is in a good state.
+
 All application dependencies in the `package.json` file should be up to date.
 
 Include a `.gitignore` file and ensure that the `node_modules` folder is not committed to github.

@@ -20,3 +20,15 @@ CREATE TABLE Latest_albums (
     foreign key(artist_name) references Latest_tracks(artist_name)
     
 );
+
+
+
+
+DROP TABLE if exists Play_list;
+CREATE TABLE Play_list (
+    id int not null auto_increment,
+    artist_name char(100),
+    song_name char(100),
+    primary key(id)
+
+);

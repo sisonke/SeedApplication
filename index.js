@@ -5,7 +5,8 @@ var express = require('express'),
     myConnection = require('express-myconnection'),
     bodyParser = require('body-parser'),
     home = require('./routes/home'),
-    downloads = require('./routes/downloads')
+    downloads = require('./routes/downloads'),
+    playlist = require('./routes/playlist')
 
 var app = express();
 
@@ -14,7 +15,7 @@ var dbOptions = {
       user: 'root',
       password: '12345',
       port: 3306,
-      database: 'NelisaSpaza'
+      database: 'Music'
   
 };
 
@@ -38,6 +39,9 @@ app.get('/',function(req, res){
 
 //sisonke's routes
 app.get('/downloads', downloads.show);
+app.get('/playlist', playlist.show);
+
+
 
 
 

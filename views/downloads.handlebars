@@ -1,0 +1,27 @@
+
+<div class ="rows">
+<table>
+	<thead>
+<tr>
+<th>Artist Name</th>
+<th>Release Date</th>
+<th>Track Name</th>
+
+</tr>
+</thead>	
+<tbody>
+	{{#Latest_tracks}}
+<tr>
+
+<td>{{artist_name}}</td>
+<td>{{release_date}}</td>
+<td>{{track_name}}</td>
+
+<td><a href="/view  track//{{id}}">View Track</a>
+ <a href="//download/{{id}}">Download Track</a></td>
+</tr>
+{{/Latest_tracks}}
+</tbody>
+</table>
+</div>
+

@@ -1,0 +1,25 @@
+<div class ="rows">
+<table>
+	<thead>
+<tr>
+<th>Artist_Name</th>
+<th>Song_Name</th>
+</tr>
+
+</thead>	
+<tbody>
+	{{#results}}
+<tr>
+
+<td>{{artist_name}}</td>
+<td>{{song_name}}</td>
+
+<td><a href="/view  track//{{id}}">Play Song</a>
+ <a href="//download/{{id}}">Download Song </a></td>
+</tr>
+{{/results}}
+</tbody>
+</table>
+
+
+</div>

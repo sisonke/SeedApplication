@@ -1,3 +1,4 @@
+
 body {
     padding: 50px;
 	background-color: #FFFFFF;
@@ -15,6 +16,7 @@ ul {
   padding: 23px;
   pointer-events: fill;	
   text-decoration: none;
+
 }
 h1 {
 	color: 
@@ -34,15 +36,19 @@ footer {
      height: 45px;
      position: relative;	
 }
- .container{
-	width: 57px;
-	height: 48px;
-	text-align:  center;
-	position:  relative;
-	bottom:  0;
-	
+ 
 }
 img{
 	width: 417;
 	height: 417;
+}
+ .icon {
+	width: 57px;
+	height: 48px;
+    border-radius: 50px;
+	position: relative;
+	bottom:  0;
+	display: inline;
+	margin-left: 150px;
+
 }

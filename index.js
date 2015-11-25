@@ -6,7 +6,8 @@ var express = require('express'),
     bodyParser = require('body-parser'),
     home = require('./routes/home'),
     downloads = require('./routes/downloads'),
-    playlist = require('./routes/playlist')
+    playlist = require('./routes/playlist'),
+    contactus = require('./routes/contact us')
 
 var app = express();
 
@@ -40,6 +41,8 @@ app.get('/',function(req, res){
 //sisonke's routes
 app.get('/downloads', downloads.show);
 app.get('/playlist', playlist.show);
+app.get('/contact us', contactus.get);
+
 
 
 

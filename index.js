@@ -4,7 +4,7 @@ var express = require('express'),
     mysql = require('mysql'),
     myConnection = require('express-myconnection'),
     bodyParser = require('body-parser'),
-    home = require('./routes/home'),
+    //home = require('./routes/home'),
     downloads = require('./routes/downloads'),
     playlist = require('./routes/playlist'),
     contactus = require('./routes/contact us')
@@ -17,7 +17,7 @@ var dbOptions = {
       password: '12345',
       port: 3306,
       database: 'Music'
-  
+
 };
 
 //setup middleware
@@ -41,7 +41,7 @@ app.get('/',function(req, res){
 //sisonke's routes
 app.get('/downloads', downloads.show);
 app.get('/playlist', playlist.show);
-app.get('/contact us', contactus.get);
+//app.get('/contact us', contactus.get);
 
 
 

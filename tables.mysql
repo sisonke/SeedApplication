@@ -32,3 +32,13 @@ CREATE TABLE Play_list (
     primary key(id)
 
 );
+
+DROP if exists contact us;
+CREATE TABLE contact_us (
+    id int not null auto_increment,
+    name char(100),
+    email char(100),
+    subject char(100),
+    primary key(id)
+
+);

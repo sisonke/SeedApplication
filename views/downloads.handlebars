@@ -8,7 +8,7 @@
 <th>Track Name</th>
 
 </tr>
-</thead>	
+</thead>
 <tbody>
 	{{#Latest_tracks}}
 <tr>
@@ -17,11 +17,12 @@
 <td>{{release_date}}</td>
 <td>{{track_name}}</td>
 
-<td><a href="/view  track//{{id}}">View Track</a>
- <a href="//download/{{id}}">Download Track</a></td>
+<td><a href="/view  track//{{id}}"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Play
+</button></a></td></a>
+ <a href="//download/{{id}}"> <span class="glyphicon glyphicon-download" aria-hidden="true"></span> Download
+</button></a></td>
 </tr>
 {{/Latest_tracks}}
 </tbody>
 </table>
 </div>
-

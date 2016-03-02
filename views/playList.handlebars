@@ -1,21 +1,23 @@
 <div class ="rows">
-<table>
+<table class="table table-bordered" id="plalist_download">
 	<thead>
 <tr>
-<th>Artist_Name</th>
-<th>Song_Name</th>
+<th><em>Artist_Name</em></th>
+<th><em>Song_Name</em></th>
 </tr>
 
-</thead>	
+</thead>
 <tbody>
 	{{#results}}
 <tr>
 
 <td>{{artist_name}}</td>
 <td>{{song_name}}</td>
+<td></td>
 
-<td><a href="/view  track//{{id}}">Play Song</a>
- <a href="//download/{{id}}">Download Song </a></td>
+<td><a href="/view  track//{{id}}"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></a>
+ <a href="//download/{{id}}"><span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+</button><span class="glyphicon glyphicon-heart" aria-hidden="true"></a></td>
 </tr>
 {{/results}}
 </tbody>

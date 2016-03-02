@@ -2,3 +2,5 @@ INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Kanye Wes
 INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Cassper Nyovest','2015-11-15','Mama I made It');
 INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Aka ft Burna boy,Khuli Chana','2015-11-12','Baddest');
 INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Culoe De Song','2015-11-17','Umoya');
+INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Kwesta','2015-11-21','Nomayini');
+INSERT INTO Latest_tracks(artist_name,release_date,track_name) VALUES('Kwesta ft Cassper Nyovest','2016-01-23','Ngud'');

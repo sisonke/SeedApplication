@@ -1,24 +1,24 @@
 DROP TABLE  if exists Latest_tracks;
 CREATE TABLE Latest_tracks (
-	id int not null auto_increment,
-	artist_name char(100),
+  	id int not null auto_increment,
+  	artist_name char(100),
     release_date date,
     track_name char(100),
     primary key(id),
-	CONSTRAINT uc_artist_name UNIQUE (artist_name)
+  	CONSTRAINT uc_artist_name UNIQUE (artist_name)
 
 );
- 
+
 
 DROP TABLE  if exists Latest_albums;
 CREATE TABLE Latest_albums (
-	id int not null auto_increment,
+  	id int not null auto_increment,
     artist_name char(100),
     album_name  char(100),
     release_date date,
     primary key(id) ,
     foreign key(artist_name) references Latest_tracks(artist_name)
-    
+
 );
 
 

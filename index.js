@@ -34,7 +34,6 @@ function errorHandler(err, req, res, next) {
 //setup the handlers
 app.get('/',function(req, res){
   res.render('home')
-
   });
 
 
